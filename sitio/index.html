@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio Irigaray</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="spectrogram-player/style.css" />
+    <script type="text/javascript" src="spectrogram-player/spectrogram-player.js"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Ignacio Irigaray</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-700 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold">Ignacio Irigaray</h2>
+            <p class="mt-4 text-xl">Pruebas de archivos de audio</p>
+        </div>
+    </section>
+
+
+
+    <!-- Main Content -->
+    <main class="flex-1 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <section id="about" class="mb-16">
+                <h3 class="text-3xl font-semibold text-center mb-6">Introducción</h3>
+                <p class="text-lg text-center">Aquí encontrarán los archivos de audio para validación del contenido del informe.</p>
+            </section>
+
+            <section id="services" class="mb-16">
+                <h3 class="text-3xl font-semibold text-center mb-6">Pruebas de audio</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                        <h4 class="text-xl font-semibold">Primera muestra</h4>
+                        <p class="mt-2">We create user-friendly, visually appealing websites.</p>
+                        <div class="spectrogram-player">
+                            <img src="SNRclips/SNR_10dB/excerptID-17-noisy_clip.jpg" />
+                            <audio controls>
+                              <source src="SNRclips/SNR_10dB/excerptID-17-noisy_clip.wav" type="audio/wav">
+                            </audio>
+                          </div>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                        <h4 class="text-xl font-semibold">Development</h4>
+                        <p class="mt-2">We specialize in building fast and responsive web applications.</p>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                        <h4 class="text-xl font-semibold">SEO Optimization</h4>
+                        <p class="mt-2">We help your website rank higher on search engines.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>&copy; 2025 Ignacio Irigaray.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
